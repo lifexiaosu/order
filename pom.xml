@@ -119,6 +119,20 @@
 					<contextReloadable>true</contextReloadable>
 				</configuration>
 			</plugin>
+			
+			<!-- 添加测试findbugs     -->
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>        
+				<artifactId>findbugs-maven-plugin</artifactId>        
+				<version>3.0.1</version>
+				<configuration> 
+				   <findbugsXmlOutput>true</findbugsXmlOutput>        
+				   <findbugsXmlWithMessages>true</findbugsXmlWithMessages>        
+				   <xmlOutput>true</xmlOutput>        
+				</configuration>        
+		   </plugin>
+			
+			
 		</plugins>
 	</build>
 </project>
